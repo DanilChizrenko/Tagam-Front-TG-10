@@ -6,7 +6,7 @@ body{
 }
 
 @media screen and (max-width: 391px){
-    .container{
+    /* .container{
         max-width: 358px;
     }
     .main, .main .container{
@@ -92,5 +92,79 @@ body{
         color: #000000;
         
         padding-bottom: 6px;
-    }
+    } */
+        #calendar{
+        margin-left: auto;
+        margin-right: auto;
+        width: 358px;
+        }
+        #calendar_weekdays div{
+        display:inline-block;
+        vertical-align:bottom;
+        }
+        #calendar_content, #calendar_weekdays{
+        position: relative;
+        width: 358px;
+        overflow: hidden;
+        float: left;
+        z-index: 10;
+        font-family: 'Montserrat';
+        }
+        #calendar_weekdays div, #calendar_content div{
+        width: 48px;
+        height: 57px;
+        border-radius: 19px;
+        overflow: hidden;
+        text-align: center;
+        background-color: #F1EACC;
+        justify-content: center;
+        align-items: flex-end;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 6px;
+        }
+        #calendar_content div{
+        float:left ;
+        }
+        #calendar_content div:hover{
+        background-color: #F8D776;
+        }
+        #calendar_content div.blank{
+        background-color: #E8E8E8;
+        }
+        #calendar_header, #calendar_content div.today{
+        zoom: 1;
+        filter: alpha(opacity=70);
+        opacity: 0.7;
+        font-family: 'Montserrat Alternates';
+        }
+        #calendar_content div.today{
+        color: #000000;
+        }
+        #calendar_header{
+        width: 358px;
+        height: 100px;
+        margin: 0 16px 7px 16px;
+        text-align: center;
+        background-color: #ff6860;
+        border-bottom: 1px solid #000;
+        }
+        #calendar_header h1{
+        font-size: 1.5em;
+        color: #000;
+        float:left;
+        width:70%;
+        }
+        i[class^=icon-chevron]{
+        color: #FFFFFF;
+        float: left;
+        width:15%;
+        border-radius: 50%;
+        }
+        
 }
