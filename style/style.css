@@ -101,11 +101,14 @@ body{
         #calendar_weekdays div{
         display:inline-block;
         vertical-align:bottom;
+        margin-right: 3px;
         }
         #calendar_content, #calendar_weekdays{
         position: relative;
-        width: 358px;
+        max-width: 358px;
         overflow: hidden;
+        justify-content: center;
+        align-items: center;
         float: left;
         z-index: 10;
         font-family: 'Montserrat';
@@ -116,26 +119,29 @@ body{
         border-radius: 19px;
         overflow: hidden;
         text-align: center;
-        background-color: #F1EACC;
-        justify-content: center;
-        align-items: flex-end;
+        background-color: #f1eacc;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 20px;
+        line-height: 24px;
         text-align: center;
         color: #000000;
         padding-bottom: 6px;
         }
         #calendar_content div{
         float:left ;
+        margin-right: 3px;
+        }
+        #calendar_content {
+        padding-bottom: 36px;
+        border-bottom: 1px solid #000;
         }
         #calendar_content div:hover{
         background-color: #F8D776;
         }
         #calendar_content div.blank{
-        background-color: #E8E8E8;
+        background-color: #fff7d4;
         }
         #calendar_header, #calendar_content div.today{
         zoom: 1;
@@ -144,27 +150,44 @@ body{
         font-family: 'Montserrat Alternates';
         }
         #calendar_content div.today{
-        color: #000000;
+        color: #ffbf00;
         }
         #calendar_header{
         width: 358px;
-        height: 100px;
-        margin: 0 16px 7px 16px;
+        height: 37px;
+        margin: 16px 0 7px;
         text-align: center;
-        background-color: #ff6860;
         border-bottom: 1px solid #000;
         }
         #calendar_header h1{
-        font-size: 1.5em;
-        color: #000;
-        float:left;
-        width:70%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #000000;
         }
         i[class^=icon-chevron]{
         color: #FFFFFF;
         float: left;
         width:15%;
         border-radius: 50%;
+        }
+        .tool-bar, .tool-con{
+            height: 75px;
+        }
+        .tool-bar{
+            background: #F1EACC;
+            position: sticky;
+            bottom: 0;
+        }
+        .tool-con{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .tool-con img{
+            border-bottom: 1px solid #F8D776;
         }
         
 }
